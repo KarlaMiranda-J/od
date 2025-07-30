@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function cargarNavbar() {
-  fetch('/components/nav.html')
+  fetch('./components/nav.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar-placeholder').innerHTML = html;
@@ -21,7 +21,7 @@ function cargarNavbar() {
 }
 
 function cargarFooter() {
-  fetch('/components/footer.html')
+  fetch('./components/footer.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('footer-placeholder').innerHTML = html;
@@ -136,10 +136,10 @@ function cambiarFondoHeader() {
   if (!bgLayers[0] || !bgLayers[1]) return;
 
   const headerImages = [
-    '/assets/img/header/1.jpg',
-    '/assets/img/header/2.jpg',
-    '/assets/img/header/3.jpg',
-    '/assets/img/header/4.jpg',
+    './assets/img/header/1.jpg',
+    './assets/img/header/2.jpg',
+    './assets/img/header/3.jpg',
+    './assets/img/header/4.jpg',
   ];
 
   let index = 0;
@@ -219,10 +219,10 @@ function controlarNavbarConHeader() {
 
     if (navbarBottom > mastheadBottom) {
       navbar.classList.add('navbar-shrink');
-      logo.src = '/assets/img/OneDev.png'; // Logo shrink
+      logo.src = './assets/img/OneDev.png'; // Logo shrink
     } else {
       navbar.classList.remove('navbar-shrink');
-      logo.src = '/assets/img/OneDevWhite.png'; // Logo normal
+      logo.src = './assets/img/OneDevWhite.png'; // Logo normal
     }
   }
 
