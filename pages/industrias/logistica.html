@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>OneDev</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <!-- Font Awesome icons -->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- CSS -->
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/custom.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+            <style>
+            .section-title {
+            border: none !important;
+            padding-left: 0;
+            text-transform: uppercase;
+            }
+
+            .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2rem !important;
+            align-items: center;
+            }
+
+            .section-content:nth-child(even) .text {
+            order: 2;
+            }
+
+            .section-content .text {
+            flex: 1 1 50%;
+            padding: 1.5rem;
+            }
+
+            .section-content .image {
+            flex: 1 1 50%;
+            padding: 1.5rem;
+            text-align: center;
+            }
+
+            .section-content .image img {
+            max-width: 100%;
+            min-height: 400px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 1rem;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            }
+
+            .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 150px;
+            gap: 0.75rem;
+            }
+
+            .gallery-grid .grid-item {
+            overflow: hidden;
+            position: relative;
+            }
+
+            .gallery-grid .grid-item img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.4s ease;
+            }
+
+            .gallery-grid .grid-item:hover img {
+            transform: scale(1.05);
+            }
+
+            .gallery-grid .tall {
+            grid-row: span 2;
+            }
+
+            .gallery-grid .wide {
+            grid-column: span 2;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navigation-->
+        <div id="navbar-placeholder"></div>
+
+        <!-- Header -->
+        <header class="privacy-header masthead">
+            <h1 class="masthead-heading pb-1 mb-0">Industrias</h1>
+            <p class="lead mt-3" style="font-size: 1.5rem;">Atendemos sectores clave con soluciones tecnológicas y operativas.</p>
+        </header>
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="bg-light py-2 pt-5">
+            <div class="container">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="/" class="text-decoration-none text-primary">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Industrias</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main class="container py-5">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-center">
+                    <p class="fs-5 text-muted">
+                        En <strong>OneDev</strong> atendemos distintas industrias con soluciones personalizadas en tecnología, soporte y servicios técnicos en campo, adaptándonos a los retos específicos de cada sector.
+                    </p>
+                </div>
+            </div>
+
+            <!-- INDUSTRIA: Telecomunicaciones -->
+            <section class="section-content page-section p-0" id="telecomunicaciones">
+                <div class="text">
+                    <h2 class="section-title">Telecomunicaciones</h2>
+                    <p class="fs-5 text-muted">
+                        Ofrecemos soluciones robustas para operadores, integradores y empresas del sector telecom. Soportamos el despliegue de redes, instalaciones masivas, pruebas de calidad, y mantenimiento con personal certificado y procesos ágiles.
+                    </p>
+                </div>
+                <div class="image d-flex justify-content-center">
+                        <div class="gallery-grid d-grid gap-2">
+                            <div class="grid-item tall">
+                                <img src="/assets/img/industrias/tel1.jpg" class="img-fluid rounded-3 shadow" alt="Equipo colaborando">
+                            </div>
+                            <div class="grid-item">
+                                <img src="/assets/img/industrias/tel2.jpg" class="img-fluid rounded-3 shadow" alt="Tecnología">
+                            </div>
+                            <div class="grid-item">
+                                <img src="/assets/img/nosotros/us6.jpg" class="img-fluid rounded-3 shadow" alt="Tecnología">
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- INDUSTRIA: Mantenimiento -->
+            <section class="section-content page-section p-0" id="mantenimiento">
+                <div class="text">
+                    <h2 class="section-title">Mantenimiento y reparación</h2>
+                    <p class="fs-5 text-muted">
+                        Atendemos entornos que requieren mantenimiento técnico, eléctrico o electrónico de forma programada o reactiva. Brindamos servicios correctivos y preventivos con cobertura nacional, control de SLA y trazabilidad en tiempo real.
+                    </p>
+                </div>
+                <div class="image d-flex justify-content-center">
+                        <div class="gallery-grid d-grid gap-2">
+                            <div class="grid-item wide">
+                                <img src="/assets/img/nosotros/us6.jpg" class="img-fluid rounded-3 shadow" alt="Tecnología">
+                            </div>
+                            <div class="grid-item wide">
+                                <img src="/assets/img/nosotros/us3.jpg" class="img-fluid rounded-3 shadow" alt="Oficina moderna">
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- INDUSTRIA: Logística y Transporte -->
+            <section class="section-content page-section p-0" id="logistica">
+                <div class="text">
+                    <h2 class="section-title">Logística y transporte</h2>
+                    <p class="fs-5 text-muted">
+                        Impulsamos operaciones logísticas con soluciones tecnológicas y servicios en campo. Instalamos dispositivos GPS, RFID, sensores IoT y damos soporte técnico a flotas, almacenes y centros de distribución para mejorar trazabilidad y eficiencia.
+                    </p>
+                </div>
+                <div class="image d-flex justify-content-center">
+                        <div class="gallery-grid d-grid gap-2">
+                            <div class="grid-item">
+                                <img src="/assets/img/nosotros/us2.jpg" class="img-fluid rounded-3 shadow" alt="Equipo colaborando">
+                            </div>
+                            <div class="grid-item">
+                                <img src="/assets/img/nosotros/us4.jpg" class="img-fluid rounded-3 shadow" alt="Tecnología">
+                            </div>
+                            <div class="grid-item">
+                                <img src="/assets/img/nosotros/us6.jpg" class="img-fluid rounded-3 shadow" alt="Tecnología">
+                            </div>
+                            <div class="grid-item">
+                                <img src="/assets/img/nosotros/us3.jpg" class="img-fluid rounded-3 shadow" alt="Oficina moderna">
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- INDUSTRIA: Servicios de campo -->
+            <section class="section-content page-section p-0" id="servicios-campo">
+                <div class="text">
+                    <h2 class="section-title">Servicios de campo</h2>
+                    <p class="fs-5 text-muted">
+                        Contamos con equipos técnicos desplegados a nivel nacional para la atención de servicios en campo. Realizamos instalaciones, configuraciones, auditorías, visitas técnicas y soporte en sitio, todo con control centralizado y reportes automatizados.
+                    </p>
+                </div>
+                <div class="image d-flex justify-content-center">
+                        <div class="gallery-grid d-grid gap-2">
+                            <div class="grid-item wide">
+                                <img src="/assets/img/industrias/sc1.jpg" class="img-fluid rounded-3 shadow" alt="Equipo colaborando">
+                            </div>
+                            <div class="grid-item">
+                                <img src="/assets/img/industrias/sc2.jpg" class="img-fluid rounded-3 shadow" alt="Tecnología">
+                            </div>
+                            <div class="grid-item">
+                                <img src="/assets/img/industrias/sc3.jpg" class="img-fluid rounded-3 shadow" alt="Tecnología">
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <!-- Botón flotante para ir al top -->
+        <button id="btn-back-to-top" class="btn btn-primary rounded-circle shadow" 
+            style="position: fixed; bottom: 30px; right: 30px; display: none; width: 50px; height: 50px; z-index: 9999;">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <!-- Footer-->
+        <div id="footer-placeholder"></div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </body>
+</html>
